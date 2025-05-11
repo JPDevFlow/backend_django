@@ -1,4 +1,6 @@
 import mysql.connector
+#Creamos un objeto de conexion a la base de datos
+#En este caso la base de datos se llama personas_db
 personas_db = mysql.connector.connect(
     host ="localhost", #127.0.0.1
     user ="root",
@@ -14,3 +16,7 @@ resultados = cursor.fetchall()#El metodo fetchall() devuelve todos los registros
 #Iteramos sobre los resultados
 for persona in resultados:
     print(persona)
+
+#Cerramos la conexion
+cursor.close()
+personas_db.close()
