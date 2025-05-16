@@ -38,11 +38,12 @@
               </tr>
             </thead>
             <tbody>
+              {% for cliente in clientes %}
               <tr>
-                <td>1</td>
-                <td>Ramiro</td>
-                <td>Torres</td>
-                <td>100</td>
+                <td>{{cliente.id}}</td>
+                <td>{{cliente.nombre}}</td>
+                <td>{{cliente.apellido}}</td>
+                <td>{{cliente.membresia}}</td>
                 <td class="text-center">
                   <div>
                     <i class="bi bi-pencil"></i>
@@ -50,6 +51,7 @@
                   </div>
                 </td>
               </tr>
+              {% endfor %}
             </tbody>
           </table>
         </div><!--cierre del div del contenedor del listado de clientes-->
