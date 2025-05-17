@@ -1,0 +1,13 @@
+FLASK:
+Es un microframework de python para la creación de aplicaciones web.
+Aplica un patron de diseño MVC
+MODELO-VISTA-CONTROLADOR
+MODELO = Los datos de nuestra aplicacion
+VISTA = Son las paginas HTML (Plantillas)
+CONTROLADOR = Donde se administran las peticiones web
+RESUMEN: Flask es una aplicacion que nos facilitara la tarea de hacer aplicaciones web con python
+
+
+TIPOS DE PETICONES HTML:
+    Peticion get: El cliente solicita la informacion al servidor y va incluido en la direccion http
+    Peticion POST: La Peticion POST se envia en el cuerpo de la peticion http 
