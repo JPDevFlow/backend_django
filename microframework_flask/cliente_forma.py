@@ -5,13 +5,15 @@ from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired
 
 # Importa campos de tipo texto y botón de envío
-from wtforms.fields.simple import StringField, SubmitField
+from wtforms.fields.simple import StringField, SubmitField, HiddenField
 
 # Importa campo de tipo numérico entero
 from wtforms.fields.numeric import IntegerField
 
 # Define una clase de formulario para clientes, heredando de FlaskForm
 class ClienteForma(FlaskForm):
+    # Campo oculto para el ID del cliente, no visible en el formulario
+    id = HiddenField("id")
     # Campo de texto para el nombre, obligatorio
     nombre = StringField("Nombre", validators =[DataRequired()])
     # Campo de texto para el apellido, obligatorio
